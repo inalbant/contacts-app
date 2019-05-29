@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+    background-image: url('bg.jpeg');
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px black;
+}
+
+.table-container {
+    margin-top: 3rem;
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.table-row {
+    display: flex;
+}
+
+.table-column {
+    background-color: rgba(236, 54, 68, 0.8);
+    margin: 2px;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tName {
+    flex-basis: 20%;
+}
+
+.tPhone {
+    flex-basis: 20%;
+}
+
+.tAddress {
+    flex-grow: 2;
+    flex-basis: 20%;
+}
+
+.tHeader {
+    background-color: rgba(236, 54, 68, 1);
+    font-weight: bolder;
+}
+
+.tEdit, .tCancel, .add-entry-column {
+    flex-basis: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#newPersonModel {
+    width: 500px;
+    padding: 10px;
+    border-radius: 3px;
+    z-index: 99;
+    top: 50px;
+    position: absolute;
+    margin-left: calc(50% - 250px);
+}
